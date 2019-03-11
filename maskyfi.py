@@ -1,9 +1,10 @@
-cc = input("Enter credit card number: ")  # cc for Credit Card
+#cc = input("Enter credit card number: ")  # cc for Credit Card
 
 
 def maskify(cc):
 
-    return cc.replace(cc[0:-4], "#")
+    return "#"*(len(cc)-4) + cc[-4:]
 
 
-print(maskify(cc))
+#print(maskify(cc))
+
